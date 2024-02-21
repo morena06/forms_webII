@@ -1,3 +1,7 @@
+:root{
+  --azul:#0096c7;
+}
+
 body {
   display: flex;
   flex-direction: columns;
@@ -12,7 +16,8 @@ body {
 }
 
 .container {
-  max-width: 600px;
+  width: 100%;
+  max-width: 400px;
   margin: 50px 20px;
   padding: 40px 40px;
   background-color: #ffffff; /* branco */
@@ -36,7 +41,7 @@ header {
 .heading {
   font-size: 22px;
   font-weight: 800;
-  color: #330043; /* roxo */
+  color: var(--azul); /* roxo */
   margin: 0;
 }
 
@@ -49,18 +54,19 @@ label {
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #330043; /* roxo */
+  color: var(--azul); /* roxo */
 }
 
 input[type="text"],
 input[type="tel"],
 input[type="email"],
+input[type="password"],
 textarea {
   width: calc(100% - 24px); /* Ajuste para a largura dos inputs */
   padding: 12px;
-  border: 2px solid #330043; /* roxo */
+  border: 2px solid var(--azul); /* roxo */
   border-radius: 8px;
-  background-color: rgba(51, 0, 67, 0.2); /* roxo com transparência */
+  background-color: #caf0f8; /* roxo com transparência */
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -80,7 +86,7 @@ textarea:focus {
 
 
 .btn {
-  background-color: #330043; /* roxo */
+  background-color: var(--azul); /* roxo */
   color: #ffffff; /* branco */
   width: 100%; /* Ocupa toda a largura do container */
   padding: 14px;
@@ -93,5 +99,5 @@ textarea:focus {
 }
 
 .btn:hover {
-  background-color: rgba(51, 0, 67, 0.67); /* tom mais escuro de roxo */
+  background-color: #1fd3f7; /* tom mais escuro de roxo */
 }
