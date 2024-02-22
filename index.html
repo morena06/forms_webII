@@ -14,8 +14,11 @@
   </head>
   <body>
     <div class="container">
+      <div class="buttons"> 
+        <a href="listagem.html" class="btn">Ver formulário</a>
+      </div>
       <header>
-        <img src="/assets/image-removebg-preview.png" alt="Logo" class="logo" />
+        <img src="/assets/logo.png" alt="Logo" class="logo" />
         <h1 class="heading">Logar Conta</h1>
       </header>
       <form action="#" method="post" class="form">
@@ -65,9 +68,10 @@
         console.log(dados);
         console.log(JSON.stringify(dados));
 
+
         try {
           // Faz uma requisição para a sua API
-          await fetch("https://meu-primeiro-projeto.onrender.com/formulario", {
+          await fetch("https://meu-primeiro-projeto.onrender.com/Formulario", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
